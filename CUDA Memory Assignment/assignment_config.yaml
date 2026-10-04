@@ -1,0 +1,6 @@
+version: 1
+assignment:
+  name: cuda-memory-assignment
+  source_directory: memory_assignment
+  build_script: memory_assignment/build.sh
+  run_script: memory_assignment/run.sh
