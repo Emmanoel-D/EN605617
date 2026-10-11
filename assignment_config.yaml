@@ -1,6 +1,3 @@
-version: 1
-assignment:
-  name: module3-cuda-branching
-  source_directory: module3
-  build_script: module3/build.sh
-  run_script: module3/run.sh
+folder: cuda_streams
+build: {}
+run: {}

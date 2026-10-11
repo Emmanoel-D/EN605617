@@ -1,0 +1,6 @@
+assignment
+assignment.exe
+*.o
+*.obj
+*.lib
+*.exp
