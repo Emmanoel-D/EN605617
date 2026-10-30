@@ -1,0 +1,33 @@
+Execution started: 2026-10-30T05:53:03Z
+Command: ./build/audio_denoiser.exe
+name, driver_version
+NVIDIA GeForce RTX 5080, 617.42
+GPU: NVIDIA GeForce RTX 5080 (SM 12.0)
+CUDA runtime: 13040; driver: 13040; cuFFT: 12300
+Libraries: cuFFT (Module 8), Thrust (Module 9)
+
+Case: white_noise; FFT=1024
+  SNR before: 10.038221 dB; after: 18.243635 dB; improvement: 8.205413 dB
+  bypass max error: 1.490116e-07 (limit 2.000000e-05)
+  direct DFT error: 1.267033e-07 (limit 2.000000e-04)
+  CPU reference max error: 1.490116e-07 (limit 2.000000e-04)
+  GPU pipeline: 0.480000 ms (excludes planning, transfers, validation, file I/O)
+  PASS
+
+Case: mains_hum; FFT=1024
+  SNR before: 2.922083 dB; after: 12.441262 dB; improvement: 9.519179 dB
+  bypass max error: 2.086163e-07 (limit 2.000000e-05)
+  direct DFT error: 3.218332e-07 (limit 2.000000e-04)
+  CPU reference max error: 1.490116e-07 (limit 2.000000e-04)
+  GPU pipeline: 0.088352 ms (excludes planning, transfers, validation, file I/O)
+  PASS
+
+Case: heavy_noise; FFT=2048
+  SNR before: -0.030360 dB; after: 8.525452 dB; improvement: 8.555812 dB
+  bypass max error: 2.384186e-07 (limit 2.000000e-05)
+  direct DFT error: 3.569289e-07 (limit 2.000000e-04)
+  CPU reference max error: 1.490116e-07 (limit 2.000000e-04)
+  GPU pipeline: 0.137280 ms (excludes planning, transfers, validation, file I/O)
+  PASS
+
+ALL CHECKS PASSED; results: results
